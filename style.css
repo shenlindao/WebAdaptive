@@ -23,6 +23,7 @@ body {
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  position: relative;
 }
 
 .main__wrap {
@@ -72,6 +73,63 @@ header {
 
 .header__cart_count img {
   width: 100%;
+}
+
+.header__block2__burger,
+.header__block2__user,
+.header__block2__cart {
+  cursor: pointer;
+}
+
+.header__menu {
+  width: 166px;
+  height: 570px;
+  padding: 32px 33px;
+  background: #fff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: absolute;
+  top: 75px;
+  right: -230px;
+  display: none;
+}
+
+.header__menu__title {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header__menu__category {
+  margin-top: 24px;
+}
+
+.header__menu__category__title {
+  color: #f16d7f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.header__menu__category__section {
+  margin-left: 21.5px;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.header__menu__category__section:first-child {
+  margin-top: 12px;
+}
+
+.header__menu__category__section {
+  margin-top: 11px;
 }
 
 .brand {
@@ -289,6 +347,47 @@ header {
   max-height: 587px;
   background-color: #f8f8f8;
   cursor: pointer;
+  position: relative;
+}
+
+.catalog__item__hover_bg {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 420px;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.catalog__item__hover_bg:hover {
+  background-color: rgba(33, 22, 22, 0.7);
+}
+
+.add_to_cart {
+  width: 139px;
+  height: 44px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 13px;
+}
+
+.catalog__item__hover_bg:hover .add_to_cart {
+  display: flex;
+}
+
+.add_to_cart img {
+  width: 26px;
+  height: 24px;
 }
 
 .catalog__item__img {
@@ -377,6 +476,12 @@ header {
   }
 }
 
+@media (min-width: 1920px) {
+  .header__block2:hover + .header__menu {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1140px) {
   .category__block1 {
     gap: 20px;
@@ -412,5 +517,13 @@ header {
     width: 100%;
     height: 363px;
     justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__block2__user,
+  .header__block2__cart,
+  .header__cart_count {
+    display: none;
   }
 }
