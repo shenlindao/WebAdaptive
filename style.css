@@ -23,7 +23,6 @@ body {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  position: relative;
 }
 
 .main__wrap {
@@ -37,6 +36,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #222;
+  position: relative;
 }
 
 .header__block1 {
@@ -89,7 +89,8 @@ header {
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
   top: 75px;
-  right: -230px;
+  right: 7%;
+  z-index: 3;
   display: none;
 }
 
@@ -476,8 +477,8 @@ header {
   }
 }
 
-@media (min-width: 1920px) {
-  .header__block2:hover + .header__menu {
+@media (min-width: 768px) {
+  .header__wrap:hover + .header__menu {
     display: block;
   }
 }
