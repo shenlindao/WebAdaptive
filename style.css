@@ -543,6 +543,18 @@ header {
     height: 61px;
   }
 
+  .category__block1__elem {
+    height: 248px;
+  }
+
+  .accesories {
+    background-position: top;
+  }
+
+  .category__block2__elem {
+    height: 111px;
+  }
+
   .catalog__items {
     margin-left: 8px;
     margin-right: 8px;
