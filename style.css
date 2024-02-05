@@ -166,6 +166,7 @@ header {
   min-width: max-content;
   max-width: fit-content;
   margin-left: 3.13vw;
+  align-items: center;
 }
 
 .brand__pink_block {
@@ -317,6 +318,7 @@ header {
   align-items: center;
   gap: 6px;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 .catalog__title__theme {
@@ -510,6 +512,14 @@ header {
 }
 
 @media (max-width: 767px) {
+  .header__block1 {
+    margin-left: 16px;
+  }
+
+  .header__block2 {
+    margin-right: 16px;
+  }
+
   .brand__block1 {
     display: none;
   }
@@ -518,6 +528,25 @@ header {
     width: 100%;
     height: 363px;
     justify-content: center;
+  }
+
+  .brand__title_text {
+    font-size: 38px;
+  }
+
+  .brand__low_text,
+  .brand__pink_text {
+    font-size: 20px;
+  }
+
+  .brand__pink_block {
+    height: 61px;
+  }
+
+  .catalog__items {
+    margin-left: 8px;
+    margin-right: 8px;
+    gap: 16px;
   }
 }
 
