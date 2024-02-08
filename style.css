@@ -465,7 +465,7 @@ header {
 }
 
 .advantages__block__title {
-  color: rgb(251, 251, 251);
+  color: #fbfbfb;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -474,7 +474,7 @@ header {
 }
 
 .advantages__block__text {
-  color: rgb(251, 251, 251);
+  color: #fbfbfb;
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
@@ -507,7 +507,7 @@ header {
 }
 
 .subscribe__block1__text {
-  color: rgb(34, 34, 36);
+  color: #222224;
   font-style: italic;
   font-size: 20px;
   font-weight: 400;
@@ -527,7 +527,7 @@ header {
 }
 
 .subscribe__block2__text {
-  color: rgb(34, 34, 36);
+  color: #222224;
   font-size: 18px;
   font-weight: 400;
   line-height: 167.2%;
@@ -541,7 +541,7 @@ header {
 }
 
 .subscribe__block2__input {
-  background: rgb(225, 225, 225);
+  background: #e1e1e1;
   width: 80%;
   height: 49px;
   border: 0;
@@ -558,7 +558,7 @@ header {
 }
 
 .subscribe__block2__button {
-  background: rgb(224, 92, 110);
+  background: #e05c6e;
   position: absolute;
   width: 100px;
   height: 49px;
@@ -576,6 +576,34 @@ header {
   cursor: pointer;
   right: 0;
   z-index: 2;
+}
+
+.footer__bottom {
+  min-height: 79px;
+  background-color: #222224;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 223px;
+}
+
+.footer__bottom__rights {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fbfbfb;
+}
+
+.footer__bottom__social {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
 }
 
 @media (max-width: 1140px) {
