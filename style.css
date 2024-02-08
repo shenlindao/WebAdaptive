@@ -473,13 +473,109 @@ header {
   text-align: left;
 }
 
-.advantages__block__content {
+.advantages__block__text {
   color: rgb(251, 251, 251);
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
   letter-spacing: 0%;
   text-align: center;
+}
+
+.subscribe {
+  min-height: 448px;
+  padding: 64px 230px;
+  box-sizing: border-box;
+  background-image: url("./img/subscribe/subscribe_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 223px;
+}
+
+.subscribe__block1 {
+  max-width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.subscribe__block1__text {
+  color: rgb(34, 34, 36);
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.subscribe__block2 {
+  max-width: 557px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.subscribe__block2__text {
+  color: rgb(34, 34, 36);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 167.2%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.subscribe__block2__inp {
+  width: 100%;
+  position: relative;
+}
+
+.subscribe__block2__input {
+  background: rgb(225, 225, 225);
+  width: 80%;
+  height: 49px;
+  border: 0;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 22px;
+  position: absolute;
+}
+
+.subscribe__block2__button {
+  background: rgb(224, 92, 110);
+  position: absolute;
+  width: 100px;
+  height: 49px;
+  border: 0;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  z-index: 2;
 }
 
 @media (max-width: 1140px) {
