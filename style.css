@@ -480,6 +480,7 @@ header {
   line-height: 17px;
   letter-spacing: 0;
   text-align: center;
+  opacity: 0.8;
 }
 
 .subscribe {
