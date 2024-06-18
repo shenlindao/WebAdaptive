@@ -3,6 +3,11 @@
   src: url(./fonts/Lato.ttf);
 }
 
+@font-face {
+  font-family: "Font Awesome";
+  src: url(./fonts/fontawesome-free-6.5.2-web/webfonts/fa-regular-400.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -443,6 +448,111 @@ header {
   color: #fff;
 }
 
+.cart {
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.cart__title {
+  margin-top: 96px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.cart__title span {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+
+.cart__item {
+  width: 652px;
+  height: 306px;
+  border: 1px 0px 0px 0px;
+  box-shadow: 17px 19px 24px 0px #00000021;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.cart__item__img {
+  width: 262px;
+  height: 306px;
+}
+
+.cart__item__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.cart__item__block {
+  width: 200px;
+  padding: 22px 31px;
+}
+
+.cart__item__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 42px;
+}
+
+.cart__item__prop {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #6f6e6e;
+}
+
+.cart__item__prop span {
+  color: #ef5b70;
+}
+
+.cart__item__quantity {
+  width: 44px;
+  height: 24.95px;
+  border: 1px solid #eaeaea;
+  margin-left: 24px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.cart__item__quantity:focus {
+  outline: none;
+}
+
+.cart__items {
+  margin-bottom: 96px;
+  margin-right: 600px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.cart__item .fa {
+  font-size: 26px;
+  position: absolute;
+  top: 28px;
+  right: 22px;
+  color: #575757;
+  cursor: pointer;
+}
+
 .advantages {
   min-height: 341px;
   display: flex;
@@ -787,7 +897,7 @@ header {
     flex-flow: column-reverse wrap;
     gap: 40px;
     padding: 43px 62px 9px 62px;
-}
+  }
 }
 
 @media (max-width: 375px) {
