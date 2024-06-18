@@ -100,17 +100,17 @@ function addToCart(id, data) {
     } else {
         const product = data.products.find(product => product.id === parseInt(id, 10));
         if (!product) {
-            console.error('Продукт с id:', id, 'не найден в данных'); // Добавляем отладочное сообщение
+            console.error('Продукт с id:', id, 'не найден в данных');
             return;
         }
         cart.push({ id: parseInt(id, 10), quantity: 1 });
     }
-    console.log('Элемент с id:', id, 'добавлен в корзину. Текущая корзина:', cart); // Добавляем отладочное сообщение
+    console.log('Элемент с id:', id, 'добавлен в корзину. Текущая корзина:', cart);
     updateCartDisplay(data);
 }
 
 function removeFormCart(id, data) {
     cart = cart.filter(product => product.id !== parseInt(id, 10));
-    console.log('Текущая корзина:', cart); // Добавляем отладочное сообщение
+    console.log('Текущая корзина:', cart);
     updateCartDisplay(data);
 }
